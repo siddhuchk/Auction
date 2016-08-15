@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head ng-app="auction">
+	<meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+	<title>Auction Portal</title>
+
+	<!-- Material Design CSS Files -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap/bootstrap.css"> -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Acme Auction Inc</a>
+                </div>
+
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/auction">Auction</a></li>
+                    <li><a href="#/">Login</a></li>
+                </ul> -->
+            </div>
+        </nav>
+	</header>
+	<main>
+		<div class="container">
+			<!-- <div ng-view></div> -->
+			<div class="row login-view">
+				<h2>Enter Your Details</h2>
+				<form>
+					<div class="form-group">
+						<label class="col-xs-3">Email</label>
+						<input name="email" class="form-contol col-xs-6 user-email" type="text">
+					</div>
+					<div class="clearfix"></div>
+					<br>
+
+					<!-- <div class="form-group">
+						<label class="col-xs-3">Name</label>
+						<input name="name" class="form-contol col-xs-6 user-name" type="text">
+					</div>
+					<div class="clearfix"></div>
+					<br> -->
+
+					<div class="form-group">
+						<label class="col-xs-3">Phone Number</label>
+						<input name="phone" class="form-contol col-xs-6 user-phone" type="number">
+					</div>	
+					<div class="clearfix"></div>
+					<br>
+
+					<div class="form-group">
+						<input type="button" value="Login" class="submit-form">
+					</div>
+				</form>
+			</div>
+			<div class="row hidden main-view">
+				
+			</div>
+		</div>
+	</main>
+
+	<!-- Angular JS Files -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script> -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
+    <!-- Application JS Files -->
+	<!-- <script type="text/javascript" src="app.js"></script> -->
+	<!-- <script type="text/javascript" src="services/ajaxService.js"></script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var token;
+
+			$(".submit-form").click(function(){
+				var uemail = $(".user-email").val().trim(),
+					uphone = $(".user-phone").val().trim();
+				$.ajax({
+					url: "http://localhost:8000/SDChallenge/rest/user/login",
+					contentType: "application/json",
+					type: "POST",
+					data: {
+						"email": uemail,
+						"phone": uphone
+					},
+					success: function(res){
+						debugger;
+						token = res.tokenId;
+						$(".main-view").removeClass("hidden");
+						$(".login-view").addClass("hidden");
+						getAuctionProducts();
+					},
+					error: function(res){
+						debugger;
+					}
+				});
+			});
+
+			function getAuctionProducts(){
+				if(token){
+					debugger;
+					$.ajax({
+						url: "http://localhost:9080/Auction/rest/user/getAllProduct",
+						contentType: "application/json",
+						type: "POST",
+						data: {
+							tokenId: token
+						},
+						success: function(res){
+							debugger;
+						},
+						error: function(res){
+
+						}
+
+					});
+				}
+			}
+
+		});
+	</script>
+</body>
+</html>
