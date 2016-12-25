@@ -80,7 +80,7 @@
 				var uemail = $(".user-email").val().trim(),
 					uphone = $(".user-phone").val().trim();
 				$.ajax({
-					url: "http://localhost:8000/SDChallenge/rest/user/login",
+					url: "http://localhost:9000/Auction/rest/user/login",
 					contentType: "application/json",
 					type: "POST",
 					data: {
@@ -104,7 +104,7 @@
 				if(token){
 					debugger;
 					$.ajax({
-						url: "http://localhost:9080/Auction/rest/user/getAllProduct",
+						url: "http://localhost:9000/Auction/rest/user/getAllProduct",
 						contentType: "application/json",
 						type: "POST",
 						data: {

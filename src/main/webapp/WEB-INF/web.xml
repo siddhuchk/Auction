@@ -8,7 +8,7 @@ xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.su
   </context-param>
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>com.enterprise.adapter.spring.root</param-value>
+    <param-value>com.aks.spring.root</param-value>
   </context-param>
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -22,7 +22,7 @@ xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.su
     </init-param>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>com.enterprise.adapter.web</param-value>
+      <param-value>com.aks.web</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
     <async-supported>true</async-supported>
