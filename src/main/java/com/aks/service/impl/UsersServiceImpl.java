@@ -1,15 +1,20 @@
 package com.aks.service.impl;
 
+import java.security.NoSuchAlgorithmException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
+import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.task.TaskExecutor;
 import org.springframework.stereotype.Service;
 
 import com.aks.domain.user.Users;
 import com.aks.repository.UserRepository;
 import com.aks.service.UserService;
+import com.aks.utilities.PasswordEncoder;
 
 /**
  * 
@@ -24,10 +29,24 @@ public class UsersServiceImpl implements UserService {
 	@Autowired
 	private UserRepository userRepository;
 
+	@Autowired
+	private TaskExecutor executor;
+
 	@Override
-	public Users addUser(Users user) {
-		logger.debug("adding user: " + user);
-		return userRepository.save(user);
+	public Users addUser(Users user) throws SQLIntegrityConstraintViolationException, NoSuchAlgorithmException {
+		user.setUuid(UUID.randomUUID().toString());
+		String password = PasswordEncoder.passowdEncrpt(user.getPassword());
+		user.setPassword(password);
+		final Users memberInfo = userRepository.save(user);
+
+		executor.execute(new Runnable() {
+			@Override
+			public void run() {
+				//TODO
+			//	memberInfoService.updateMemberInfo(memberInfo, false);
+			}
+		});
+		return memberInfo;
 	}
 
 	@Override

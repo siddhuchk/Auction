@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<body
+	style="margin: 0 auto; padding: 0; background: #FFF; font-family: open-sans, Geneva, sans-serif; font-size: 16px;">
+	<div
+		style="padding: 20px 20px 70px 20px; background-color: #efefeb; margin: 0 auto;">
+		<table style="width: 96%; margin: 0 auto;">
+			<tr>
+					<td style="padding: 12px 2%;">
+					<div style="margin-left:30px">
+						<img src="http://fonetwish.com/images/logo.png" />
+					</div>
+
+					<table style="margin: 0 auto; background: #fff; width: 94%;">
+						<tr>
+							<td style="padding: 12px 3%;">
+
+								<div>
+									<p>
+									<div class="hello">
+										Hello <span><strong>${firstName}</strong></span>
+									</div>
+
+								</div>
+
+
+								<div>
+									<h2 style="margin-top: 0;"></h2>
+									<p style="margin: 20px 0;">Congratulations! Your application has been successfully submitted. 
+									Currently, it is under administrative review. It may take up to <b>seven days</b> for further processing of your request.
+									</p>
+									<p>
+									Application name  is : <b>  ${appName}</b> </p>
+									<p style="margin: 20px 0;">Please find below the list of operators with the USSD information as requested by you:
+									<table style="width: 700px" border="1">
+										<tr style ="font-weight:bold; background-color:#ccc;">
+											<td>Operator Name</td>
+											<td>Country</td>
+											<td>USSD Code</td>
+											<td>Billing Option</td>
+											<td>Status</td>
+										</tr>
+										#set( $count = 1 ) #foreach( $operators in ${operatorsList} )
+
+										<TR>
+
+											<TD>${operators.operatorName}</TD>
+											<TD>${operators.countryName}</TD>
+											<TD>${operators.ussdCode}</TD>
+											<td>${operators.billingOption}</td>
+											<td>Under Review</td>
+										</TR>
+										#set( $count = $count + 1 ) #end
+
+
+									</table>
+
+									</p>
+									
+									<p style="margin: 20px 0;">
+										If you have further questions, please contact <a
+											href="mailto:support@fonetwish.com">support@fonetwish.com</a>
+									</p>
+									<p style="margin: 20px 0;">Thank you</p>
+									<p style="margin: 20px 0;">
+										FonetwishTeam<br> <a href="http://www.fonetwish.com"  target="_blank">http://www.fonetwish.com/</a>
+									</p>
+								</div>
+								<div></div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<p style="float: right; margin-right: 6%;">&copy; 2013-2014</p>
+	</div>
+</body>
+</html>
+
+

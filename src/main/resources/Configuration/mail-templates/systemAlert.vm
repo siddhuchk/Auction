@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+ <body style="margin: 0 auto; padding: 0; background: #FFF; font-family:open-sans, Geneva, sans-serif; font-size:16px;" >
+ 	<div style=" max-width:700px; padding:20px 20px 70px 20px; background-color:#efefeb; margin:0 auto;">
+   <table cellpadding=0 cellspacing=0 style="width: 96%;  margin:0 auto;"><tr><td style="padding: 12px 2%;">
+   <div class=""><img src="http://54.179.131.94/fonetwish_web/images/logo.png"/></div>
+   
+     <table cellpadding=0 cellspacing=0 style="margin: 0 auto; background: #fff; width: 94%;"><tr><td style="padding: 12px 3%;">
+     
+     <div>
+       <p><div class="hello">Hello <span><strong>Admin</strong></span></div></p>
+     </div>
+     <div>
+       <h2 style="margin-top: 0;"></h2>
+       <p style="margin:20px 0;">User is getting unexpected error in fonetwish.com</p>
+    	<p style="margin:20px 0;">User Email is .<br> ${memberEmailId}</p>
+    	<p style="margin:20px 0;">User Name is .<br> ${memberName}</p>
+    	<p style="margin:20px 0;">Error Occurred in URL .<br> ${errorUrl}</p>
+    	<p style="margin:20px 0;">Error Occurred Time is .<br> ${errorTime}</p>
+    	<p style="margin:20px 0;">Error message is .<br> ${errorMessage}</p>
+    	<p style="margin:20px 0;">Error full Details is .<br> ${errorStack}</p>
+        <p style="margin:20px 0;">Thank you</p>
+        <p style="margin:20px 0;">FonetwishTeam<br><a href="http://www.fonetwish.com">http://www.fonetwish.com/</a></p>
+     </div>
+     <div>
+     
+     </div>
+     </td></tr></table>
+   </td></tr></table>
+   <p style="float:right; margin-right:6%;">&copy; 2013-2014</p>
+   </div>
+ </body>
+</html>

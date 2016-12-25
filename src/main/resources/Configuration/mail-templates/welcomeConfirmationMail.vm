@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<!-- Define Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<!-- Responsive Meta Tag -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:400,300italic,300,700" rel="stylesheet" type="text/css">
+	
+    <title>Woo</title><!-- Responsive Styles and Valid Styles -->
+
+    <style type="text/css">
+    
+	    body{
+            width: 100%; 
+            background-color: #FFFFFF; 
+            margin:0; 
+            padding:0; 
+            -webkit-font-smoothing: antialiased;
+            mso-margin-top-alt:0px; mso-margin-bottom-alt:0px; mso-padding-alt: 0px 0px 0px 0px;
+			font-family: 'Source Sans Pro', Arial, sans-serif;
+        } 
+		a, a:link, a:visited, a:hover {text-decoration:underline; color:blue;line-height:2;}
+        ul{margin: 0; padding: 0; list-style: none;}
+        p,h1,h2,h3,h4{
+	        margin-top:0;
+			margin-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+        }
+        
+        span.preheader{display: none; font-size: 1px;}
+        
+        html{
+            width: 100%; 
+        }
+        
+        table{
+            font-size: 14px;
+            border: 0;
+        }
+         
+		 
+		 .content table { width: 100%; }
+			.content table tr td { float:left; }
+			.icons{width:120px; margin:10px 15px 10px 0; font-size:10px; float:right; }
+			.icons-text{width:70px;float:left;}
+			.icons-image{width:45px;height:45px;float:left;}
+			
+		 
+		 
+		 
+		 
+        /* ----------- responsivity ----------- */
+        @media only screen and (max-width: 700px){
+			/*------ top header ------ */
+            body[yahoo] .main-header{line-height: 28px !important;}
+            body[yahoo] .main-subheader{line-height: 28px !important;}
+            
+            /*--------logo-----------*/
+            body[yahoo] .logo{width: 128px !important;}
+            
+			/*----- main image -------*/
+			body[yahoo] .main-image img{width: 440px !important; height: auto !important;}
+			body[yahoo] .hide-for-iphone{display: none !important;}
+			body[yahoo] .sideba-table{height: auto !important;}
+			
+			/*--------- blog -------------*/
+			body[yahoo] .blogSection{width: 330px !important;}
+			
+			/*--------- divider ----------*/
+			body[yahoo] .divider img{width: 420px !important; height: 1px !important;}
+			
+			/*--------- banner ----------*/
+			body[yahoo] .banner img{width: 430px !important; height: auto !important;}
+			/*-------- container --------*/			
+			body[yahoo] .container590{width: 440px !important;}
+			body[yahoo] .container580{width: 420px !important;}
+			body[yahoo] .container440{width: 230px !important;}
+            body[yahoo] .container300{width: 215px !important;}
+            
+			/*-------- secions ----------*/
+			body[yahoo] .section-item{width: 420px !important;}
+            body[yahoo] .section-img img{width: 440px !important; height: auto !important;}
+            
+            body[yahoo] .cta-header{line-height: 26px !important;}
+            
+			/*-- --------- socials ----------- --*/
+			body[yahoo] .social-container{width: 215px !important;}
+			
+			.icons{width:100%; margin:10px 0 10px 0; font-size:8px; float:left;  }
+			.icons-text{width:60%;float:left; margin-left:10px;}
+			.icons-image{width:30%;height:auto;float:left; margin-left:10px; }
+			.icons-image img{ margin-top:-10px; }
+			.mobile{ width:100%;}
+			
+		}
+		
+		@media only screen and (max-width: 479px){
+			
+			/*------ top header ------ */
+            body[yahoo] .main-header{line-height: 28px !important;}
+            body[yahoo] .main-subheader{line-height: 28px !important;}
+            
+            /*--------logo-----------*/
+            body[yahoo] .logo{width: 280px !important;}
+            body[yahoo] .date{width: 280px !important;}
+            body[yahoo] .date-inside{width: 150px !important;}
+            body[yahoo] .hideforiphone{display: none !important;}
+			body[yahoo] .tablewidth{width: 100%}
+            
+			/*----- main image -------*/
+			body[yahoo] .main-image img{width: 280px !important; height: auto !important;}
+			body[yahoo] .hide-for-iphone{display: none !important;}
+			body[yahoo] .sideba-table{height: auto !important;}
+			
+			/*--------- blog -------------*/
+			body[yahoo] .blogSection{width: 220px !important;}
+			body[yahoo] .containerDate{width: 40px !important;}
+			body[yahoo] .blog-title{font-size: 15px !important;}
+			
+			/*--------- divider ----------*/
+			body[yahoo] .divider img{width: 260px !important; height: 1px !important;}
+			
+			/*--------- banner ----------*/
+			body[yahoo] .banner img{width: 270px !important; height: auto !important;}
+			/*-------- container --------*/			
+			body[yahoo] .container590{width: 280px !important;}
+			body[yahoo] .container580{width: 260px !important;}
+            body[yahoo] .container300{width: 280px !important;}
+            body[yahoo] .container560{width: 260px !important;}
+            body[yahoo] .container440{width: 265px !important;}
+            
+			/*-------- secions ----------*/
+			body[yahoo] .section-item{width: 260px !important;}
+            body[yahoo] .section-img img{width: 280px !important; height: auto !important;}
+            body[yahoo] .section-img2 img{width: 280px !important; height: auto !important;}
+            body[yahoo] .section-img a{width: 280px !important;}
+            body[yahoo] .cta-header{line-height: 26px !important;}
+            
+			/*-- --------- socials ----------- --*/
+			body[yahoo] .social-container{width: 280px !important;}
+		}
+		
+	</style>
+</head>
+
+<body leftmargin="0" yahoo="fix" topmargin="0"    marginwidth="0" marginheight="0" bgcolor="#FFF" >
+
+	<!-- ======= end preheader ====== -->
+
+	<table border="0" width="100%" cellpadding="0" border="1px solid #000;" cellspacing="0" bgcolor="#FFF" mc:repeatable="promail" mc:variant="banner" >
+		<!-- ======= banner ======= -->
+		<tbody><tr>
+			<td align="center">
+				<table border="0" align="center" width="590" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590 ">
+					
+					<tbody>
+					
+					<tr>
+						<td align="center" style="text-align:left;color:#eb595b;" class="banner">
+						<p style="background-color:#f6f6f6; border-bottom:2px solid #612354; padding:10px;"><img src="http://fonetwish.com/images/logo.png"/></p>
+						<p style="color:#612354;font-size:20px;margin:20px 0;"><strong>Hi<span> ${firstName} </strong></p>
+						
+				        </td>
+					</tr>
+					<tr>
+						<td>
+						<strong>Welcome to Fonetwish!</strong>
+						</td>
+					</tr>
+					
+					<tr>
+						<td height="30px">
+						Fonetwish is a pioneer in USSD technology. Breaking the barrier of mobile handset dependency, Fonetwish connects people across 39 countries in 4 continents.
+						</td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>
+						Your solution will not hindered internet connectivity , in fact it is the simplest form to reach the end users.
+						</td>
+					</tr>
+					<tr>
+						<td height="30px">
+						
+						</td>
+						
+					</tr>
+					
+					
+					
+		
+				</tbody></table>
+			</td>
+			
+		</tr>
+		
+		<!-- ======= end banner ======= -->
+		
+	
+		
+	</tbody></table>
+	
+	
+	
+	<table border="0" width="100%" cellpadding="0" border="1px solid #000;" cellspacing="0" bgcolor="#FFF" mc:repeatable="promail" mc:variant="banner" >
+		<!-- ======= banner ======= -->
+		<tbody><tr>
+			<td align="center">
+				<table border="0" align="center" width="590" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590 ">
+					
+					<tbody>
+		
+					<tr>
+						<td>
+						<p><strong>Getting Started!</strong> </p>
+						<p>Now that you have successfully signed up with Fonetwish, lets move to the next stage of reaching out to billion people.<br>
+Fonetwish provides you with the most simple tools to define your application flow.
+</p>
+						</td>
+					</tr>
+
+				</tbody></table>
+			</td>
+			
+		</tr>
+		
+		<!-- ======= end banner ======= -->
+		
+	
+		
+	</tbody></table>
+	
+	
+
+	
+	
+	
+		
+	<table border="0"  width="100%" cellpadding="0" cellspacing="0" bgcolor="#FFF" mc:repeatable="promail" mc:variant="4 columns image &amp; text">
+		<!-- ======= 2 col section ======= -->
+		
+		<tbody><tr>
+			<td align="center">
+				
+				<table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590">
+					
+					<tbody>
+					<tr>
+						<td height="30px">
+						
+						</td>
+						
+					</tr>
+						<tr>
+						<td ><strong>Below are some useful links to get you started.</strong>
+						
+						</td>
+	
+					</tr>
+
+					<tr>
+						<td>
+						
+			
+							<table border="0" align="left" width="100%" height="100" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590  mobile">
+								
+								<tbody>
+								
+								<tr>
+									<td><a href="http://fonetwish.com/faq.html"><strong> FAQ</strong></a></td>
+
+								</tr>
+								
+								<tr>
+									<td><a href="http://fonetwish.com/pdf/U2opia_Fonetwish_User_Guide.pdf"> <strong>User Manual</strong></a></td>
+
+								</tr>
+								<tr>
+									<td><a href="http://fonetwish.com/pdf/U2opia_Enterprise_API_Document.pdf"> <strong>API Documents</strong></a></td>
+
+								</tr>
+								<tr>
+									<td><a href="mailto:support@fonetwish.com"><strong> For any Support and Queries</strong></a></td>
+
+								</tr>
+
+								<tr>
+									<td><a href="mailto:developer@fonetwish.com"><strong> Contact us for  Application Development</strong></a><br><br></td>
+
+								</tr>				
+		
+	                			
+							</tbody></table>
+	
+						</td>
+					</tr>
+		
+					<tr>
+					<td>			
+	
+						<p>Looking forward to working with you!</p><br><br>
+						<p> <strong>Best Regards<br>Fonetwish Team</strong></p>
+	
+						<!-- Callout Panel -->
+
+					</td>
+				</tr>
+				<tr>
+						<td height="30px">
+						
+						</td>
+						
+					</tr>
+					
+		
+					<tr>
+					<td style="border-bottom:2px solid #612354;margin-top:20px;">			
+					
+
+					</td>
+					</tr>
+					<tr>		
+					<td style="font-size:12px; text-align:center;">Copyright &copy; 2015 U2opia Mobile Pvt. Ltd., All rights reserved.
+
+					
+					</tr>					
+	
+					
+				</tbody></table>
+				
+			</td>
+		</tr>
+		<!-- ======= end 2 col section ======= -->
+		
+		
+		
+	</tbody></table>
+
+	 
+</body>
+</html>

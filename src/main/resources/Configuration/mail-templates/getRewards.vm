@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+ <h3>Hi ${firstName}!</h3>
+Welcome to Tiskus! The new social life. 
+Earn your first ever badge by using Tiskus for at least 3 days in a row and upgrade your level.
+Explore the app and start meeting like minded people now. 
+Share your interests, participate in group chat, earn badges and have fun.
+Over 10,000 people are flaunting their badges. How many have you earned?
+(A complete list of badges and level will be mentioned)
+Find us on Facebook                                                                                                  Follow us on Twitter 
+Tiskus Team
+
+ </body>
+</html>

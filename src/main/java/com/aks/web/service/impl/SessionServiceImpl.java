@@ -1,4 +1,4 @@
-package com.aks.webservices.service.impl;
+package com.aks.web.service.impl;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 
 import com.aks.domain.Session;
 import com.aks.domain.user.Users;
-import com.aks.webservices.service.SessionService;
+import com.aks.web.service.SessionService;
 
 /**
  * 

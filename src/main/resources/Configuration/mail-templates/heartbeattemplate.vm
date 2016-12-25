@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+
+<head>
+<style>
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+</style>
+</head>
+
+<body>
+
+</h3>Hi Administrator!</h3> 
+<br>
+<br>
+
+
+Follwing services is down , Please look into the issue:-
+
+
+
+
+
+<table style="width:500px">
+<tr>
+<td> Error</td>
+
+</tr>
+ #set( $count = 1 ) 
+	#foreach( $error in ${errorCode} )
+          <TR>
+              <TD>${error}</TD>
+          </TR>
+          #set( $count = $count + 1 )
+        #end
+
+
+ </table>
+<br><br><br>
+With Regards,
+<br>
+Fonetwish Team
+</body>
+</html>
+

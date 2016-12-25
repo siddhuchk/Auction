@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+
+<head>
+<style>
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+</style>
+</head>
+
+<body>
+
+</h3>Hi Administrator!</h3> 
+<br>
+<br>
+
+
+Received a query from the user as below:-
+
+
+
+<table style="width:500px">
+
+
+<TR>
+ 
+  <TD>User Name</TD>
+ <TD>Email Id</TD>
+  <TD>Phone Number</TD>
+    <TD>Message</TD>
+    
+</TR>
+ <TR>
+ 
+  <TD>${fullName}</TD>
+ <TD>${emailId}</TD>
+  <TD>${phoneNumber}</TD>
+    <TD>${message}</TD>
+    
+</TR>        
+
+
+ </table>
+<br><br><br>
+With Regards,
+<br>
+Fonetwish Team
+</body>
+</html>
+

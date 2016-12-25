@@ -1,4 +1,4 @@
-package com.aks.webservices.service;
+package com.aks.web.service;
 
 import com.aks.domain.Session;
 import com.aks.domain.user.Users;

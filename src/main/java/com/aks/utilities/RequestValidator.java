@@ -9,8 +9,7 @@ import com.aks.domain.Session;
 import com.aks.domain.user.Users;
 import com.aks.service.UserService;
 import com.aks.web.controller.global.DataAccessException;
-import com.aks.webservices.service.SessionService;
-import com.aks.webservices.utilities.ApplicationResponseCodes;
+import com.aks.web.service.SessionService;
 
 @Service
 public class RequestValidator {

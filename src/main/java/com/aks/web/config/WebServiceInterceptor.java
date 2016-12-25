@@ -12,10 +12,10 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.aks.domain.Session;
+import com.aks.utilities.ApplicationResponseCodes;
 import com.aks.web.dto.response.ResponseDTO;
 import com.aks.web.dto.response.ResponseHeaderDto;
-import com.aks.webservices.service.SessionService;
-import com.aks.webservices.utilities.ApplicationResponseCodes;
+import com.aks.web.service.SessionService;
 import com.google.gson.Gson;
 
 public class WebServiceInterceptor implements HandlerInterceptor {

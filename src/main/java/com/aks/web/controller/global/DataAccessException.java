@@ -1,6 +1,6 @@
 package com.aks.web.controller.global;
 
-import com.aks.webservices.utilities.ApplicationResponseCodes;
+import com.aks.utilities.ApplicationResponseCodes;
 
 /**
  * 
