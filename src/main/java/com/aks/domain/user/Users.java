@@ -1,7 +1,6 @@
 package com.aks.domain.user;
 
 import java.util.Date;
-import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,7 +20,7 @@ import com.aks.domain.AbstractEntity;
  */
 @Entity
 @Table(name = "users")
-public class Users extends AbstractEntity<Long>implements Cloneable {
+public class Users extends AbstractEntity<Long> implements Cloneable {
 	private static final long serialVersionUID = -3028114538116703621L;
 
 	@Column(unique = true, nullable = false)
@@ -54,8 +53,9 @@ public class Users extends AbstractEntity<Long>implements Cloneable {
 	private String token = null;
 	private Date tokenExpiry;
 	private Date activatedTime;
+	private Boolean emailTimerRequired = false;
 
-	private Boolean isBanned;
+	private Boolean isBanned=false;
 
 	@Column(length = 512)
 	private String reasonForSuspension = null;
@@ -180,6 +180,19 @@ public class Users extends AbstractEntity<Long>implements Cloneable {
 		this.reasonForSuspension = reasonForSuspension;
 	}
 
+	public Boolean getEmailTimerRequired() {
+		return emailTimerRequired;
+	}
+
+	public void setEmailTimerRequired(Boolean emailTimerRequired) {
+		this.emailTimerRequired = emailTimerRequired;
+	}
+
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();

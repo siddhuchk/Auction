@@ -10,7 +10,6 @@ import javax.management.Notification;
 
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -26,6 +25,13 @@ import org.springframework.ui.velocity.VelocityEngineUtils;
 import com.aks.utilities.ApplicationConstants;
 import com.aks.web.service.Emailer;
 
+import ch.qos.logback.classic.Logger;
+
+/**
+ * 
+ * @author anuj.siddhu
+ *
+ */
 @Component
 public class EmailerImpl implements Emailer {
 
