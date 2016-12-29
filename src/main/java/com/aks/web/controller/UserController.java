@@ -69,7 +69,7 @@ public class UserController {
 	@Autowired
 	private SessionService sessionService;
 	@Autowired
-	private ReCaptchaImpl reCaptcha;
+	ReCaptchaImpl reCaptcha;
 	@Resource(name = "blackListDomain")
 	private Map<String, String> blackListDomains;
 	@Resource(name = "activationUrlMap")
@@ -162,6 +162,12 @@ public class UserController {
 					responseHeader.setResponseMessage("SUCCESS");
 					response.setHeaders(responseHeader);
 					response.setBody(users);
+
+					String activationLink = activationUrlMap.get("mail.activation.url").toString();
+					URL url = emailUrl(users, activationLink, true);
+
+					if (url != null)
+						userService.resendVerificationEmail(users, url.toString());
 				}
 
 			} catch (SQLIntegrityConstraintViolationException e) {

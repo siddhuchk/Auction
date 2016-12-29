@@ -18,6 +18,11 @@ import com.aks.web.dto.response.ResponseHeaderDto;
 import com.aks.web.service.SessionService;
 import com.google.gson.Gson;
 
+/**
+ * 
+ * @author anuj.siddhu
+ *
+ */
 public class WebServiceInterceptor implements HandlerInterceptor {
 
 	@Autowired

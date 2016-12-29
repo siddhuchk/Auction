@@ -26,5 +26,9 @@
 			</property>
 		</bean>
 	</mvc:interceptors>
+	
+	<bean id="reCaptcha" class="net.tanesha.recaptcha.ReCaptchaImpl">
+		<property name="privateKey" value="6LcOd_MSAAAAABQIxUJKFgvpm8Lh7UeqI-oDE7cH"/>
+	</bean>
 
 </beans>

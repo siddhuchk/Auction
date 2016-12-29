@@ -150,7 +150,7 @@ public class UsersServiceImpl implements UserService {
 	}
 
 	@Override
-	public void sendWelcomeEmail(String firstName, String email) {
+	public void sendWelcomeEmail(final String firstName, final String email) {
 
 		executor.execute(new Runnable() {
 			@Override

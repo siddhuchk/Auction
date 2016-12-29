@@ -38,7 +38,7 @@
 	</bean>
 
 	<bean id="templateMessage" class="org.springframework.mail.SimpleMailMessage"
-		p:from="mahender.yadav@u2opiamobile.com" p:to="mahender.yadav@u2opiamobile.com"
+		p:from="anuj@aks.com" p:to="anuj@aks.com"
 		p:subject="tiskus test email" />
 
 </beans>

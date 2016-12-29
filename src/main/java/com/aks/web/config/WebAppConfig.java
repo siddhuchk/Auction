@@ -92,5 +92,4 @@ public class WebAppConfig extends WebMvcConfigurationSupport {
 		configurer.mediaType("html", MediaType.TEXT_HTML).mediaType("json",
 				MediaType.APPLICATION_JSON);
 	}
-
 }
